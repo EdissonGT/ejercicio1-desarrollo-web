@@ -1,0 +1,78 @@
+:root {
+    --blanco: #FFFFFF;
+    --oscuro: #212121;
+    --primario: #078bff;
+    --secundario: #0097a7;
+    --gris: #bcb3b3;
+    --azul: #2da2f1;
+}
+
+/* Aplica estilos a la clase titulo */
+.titulo {
+    text-align: center; 
+    margin: 20px; 
+    font-size: 32px; 
+    color: var(--oscuro); 
+    font-weight: bold; 
+  }
+
+/* Estilos para la clase navegacion-principal */
+.navegacion-principal {
+    display: flex;
+    justify-content: center;
+    background-color: var(--secundario);
+    padding: 25px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  
+/* Estilos para los enlaces dentro de la navegacion-principal */
+  .navegacion-principal a {
+    margin: 0 35px;
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 20px;
+  }
+
+/* Estilos para los enlaces cuando se les pasa el ratón por encima */
+.navegacion-principal a:hover {
+    color: var(--oscuro); 
+  }
+
+/* Estilos para los elementos article con la clase 'articulo' */
+.articulo {
+    background-color: var(--gris); 
+    padding: 20px; 
+    margin-bottom: 10px; 
+    border-radius: 5px; 
+    font-size: 18px; 
+    color: var(--oscuro); 
+  }
+  
+  /* Estilos para los elementos article cuando se les pasa el ratón por encima */
+  .articulo:hover {
+    background-color: var(--azul); 
+    color: var(--blanco); 
+  }
+  
+  /* Estilos para la clase footer */
+.footer {
+    text-align: center; 
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+
+  /* Media Query para tablets */
+@media (max-width: 768px) {
+  .navegacion-principal {
+    flex-direction: column;
+  }
+
+  .navegacion-principal a {
+    margin: 10px 0;
+    text-align: center; 
+  }
+}
